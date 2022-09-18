@@ -14,15 +14,15 @@
 		<!-- <title>TW</title>
 		<link rel="stylesheet" href="style.css" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-        <script src="https://cdn.tailwindcss.com"></script> -->
-        <?php wp_head(); ?>
+        	<script src="https://cdn.tailwindcss.com"></script> -->
+        <?php wp_head(); 
 	</head>
 
 	<body>
         <!-- <div class="wrapper"> -->
             <div class="container">
                 <div class="header">
-                    <h2>Header</h2>
+                    <?php get_header(); ?>
                 </div>
                 <div class="content">
                     <div class="hero">                    
@@ -89,6 +89,6 @@
             </div>
             </div>
         <!-- </div> -->
-        <?php wp_footer(); ?>
+        <?php get_footer(); ?>
 	</body>
 </html>
